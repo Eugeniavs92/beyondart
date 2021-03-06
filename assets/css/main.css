@@ -1,0 +1,67 @@
+footer {
+  background-color: #f1b376;
+  width: 100%;
+  height: 250px;
+  bottom: 0; }
+  footer img {
+    width: 197.12px;
+    height: 168px;
+    margin-left: 90px;
+    margin-top: 40px; }
+  footer .footer-container {
+    display: flex; }
+    footer .footer-container .articles:first-child {
+      margin: 46px 0 0 88.88px; }
+  footer .articles {
+    display: flex;
+    flex-direction: column;
+    margin: 46px 0 0 103px; }
+    footer .articles a:first-child {
+      margin-top: 20px; }
+    footer .articles a {
+      font-size: 15px;
+      margin-top: 12px;
+      text-decoration: none;
+      color: #000; }
+
+.rights {
+  width: 100%;
+  bottom: 0;
+  background-color: #f8a14b;
+  padding: 15px;
+  text-align: center; }
+
+.navbar {
+  background-color: #fff;
+  font-size: 15px;
+  height: 77px; }
+  .navbar .navbar-nav {
+    margin-left: 89.5px; }
+  .navbar .nav-item {
+    margin-left: 41px; }
+  .navbar .nav-item:first-child {
+    margin-left: 19px; }
+  .navbar .nav-link {
+    font-weight: 600;
+    color: black;
+    text-decoration: none; }
+  .navbar .nav-social {
+    margin-right: 30px; }
+    .navbar .nav-social a {
+      font-size: 15px;
+      margin-top: 12px;
+      text-decoration: none;
+      color: #000; }
+  .navbar .fa-facebook-square {
+    margin-right: 30px; }
+  .navbar .fa-instagram {
+    margin-right: 58px; }
+
+.carousel-item {
+  position: relative;
+  height: 598.29px; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost"; }

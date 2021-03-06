@@ -1,0 +1,10 @@
+@import 'layout/footer';
+@import 'layout/navbar';
+@import 'views/carousel';
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+

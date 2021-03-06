@@ -1,0 +1,37 @@
+@import '../utilities/variables';
+
+.navbar {
+    background-color: #fff;
+    font-size: $font-size;
+    height: 77px;
+    .navbar-nav{
+        margin-left: 89.5px;
+    }
+    .nav-item {
+        margin-left: 41px;
+    }
+    .nav-item:first-child {
+        margin-left: 19px;
+    }
+    .nav-link{ 
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+    }
+    .nav-social{
+        margin-right: 30px;
+        a {
+            font-size: $font-size;
+            margin-top: 12px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    .fa-facebook-square {
+        margin-right: 30px;
+    }
+    .fa-instagram {
+        margin-right: 58px;
+
+    }
+}
