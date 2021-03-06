@@ -9,9 +9,6 @@
     .nav-item {
         margin-left: 41px;
     }
-    .nav-item:hover {
-        border-bottom: black;
-    }
     .nav-item:first-child {
         margin-left: 19px;
     }
@@ -19,6 +16,17 @@
         font-weight: 600;
         color: black;
         text-decoration: none;
+    }
+    .beyond:hover{
+        color: red;
+    }
+    .beyond::after{
+        content: '';
+        position: absolute;
+        display: flex;
+        background-color: red;
+        height: 4px;
+        width: 6%;
     }
     .nav-social {
         margin-right: 30px;
