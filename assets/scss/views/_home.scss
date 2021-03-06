@@ -7,3 +7,29 @@
     text-align: center;
     margin: 78px auto 52px auto;
 }
+
+h3::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 212px;
+    margin: 19px 0 0 -250px;
+    background-color: #989898;
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 212px;
+    margin: 19px 0 0 27px;
+    background-color: #989898;
+}
+
+.ultimos-trabajos{
+    margin: 0 100px 89px 100px;
+}
+.img {
+    height: 275px;
+    width: 275px;
+}
