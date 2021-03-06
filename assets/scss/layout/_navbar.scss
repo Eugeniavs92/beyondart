@@ -1,24 +1,26 @@
 @import '../utilities/variables';
-
 .navbar {
     background-color: #fff;
     font-size: $font-size;
     height: 77px;
-    .navbar-nav{
+    .navbar-nav {
         margin-left: 89.5px;
     }
     .nav-item {
         margin-left: 41px;
     }
+    .nav-item:hover {
+        border-bottom: black;
+    }
     .nav-item:first-child {
         margin-left: 19px;
     }
-    .nav-link{ 
+    .nav-link {
         font-weight: 600;
         color: black;
         text-decoration: none;
     }
-    .nav-social{
+    .nav-social {
         margin-right: 30px;
         a {
             font-size: $font-size;
@@ -32,6 +34,5 @@
     }
     .fa-instagram {
         margin-right: 58px;
-
     }
 }

@@ -39,6 +39,8 @@ footer {
     margin-left: 89.5px; }
   .navbar .nav-item {
     margin-left: 41px; }
+  .navbar .nav-item:hover {
+    border-bottom: black; }
   .navbar .nav-item:first-child {
     margin-left: 19px; }
   .navbar .nav-link {
@@ -60,6 +62,16 @@ footer {
 .carousel-item {
   position: relative;
   height: 598.29px; }
+
+.titulo {
+  text-align: center;
+  margin: 78px auto 52px auto; }
+
+.titulo::after {
+  content: "";
+  height: 2px;
+  width: 212px;
+  border: red; }
 
 html, body {
   margin: 0;
