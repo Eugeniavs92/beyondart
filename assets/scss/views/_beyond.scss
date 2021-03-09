@@ -1,0 +1,45 @@
+.about-ale {
+    .sub-container {
+        height: 482px;
+    }
+    img {
+        float: left;
+        margin-right: 30px;
+    }
+}
+
+.about-beyond {
+    margin: 100px 0;
+    img {
+        float: right;
+        margin-left: 30px;
+    }
+}
+
+.text-container {
+    .subtitulo {
+        font-weight: 500;
+        font-size: 35px;
+    }
+    .texto {
+        margin-top: 13px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.ba {
+    margin-top: 120px;
+}
+
+.btn-ba {
+    bottom: 0;
+    font-weight: 600px;
+    color: $btn-ba;
+    border-color: $btn-ba;
+}
+
+.btn-ba:hover {
+    color: white;
+    background-color: $btn-ba;
+}

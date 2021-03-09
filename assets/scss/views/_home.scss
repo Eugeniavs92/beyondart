@@ -27,7 +27,7 @@ h3::after {
 }
 
 .card-container {
-    margin: 0 100px 89px 100px;
+    margin: 0 100px;
     .card-deck {
         margin-top: 26px
     }
@@ -45,7 +45,6 @@ h3::after {
             bottom: 0;
             top: 0;
             left: 0;
-            z-index: 5;
             padding: 10px;
             margin: 0;
             opacity: 1;
@@ -65,4 +64,8 @@ h3::after {
     .card-body {
         border: none;
     }
+}
+
+.card-container:last-child {
+    margin-bottom: 100px;
 }
