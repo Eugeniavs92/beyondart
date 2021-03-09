@@ -37,7 +37,6 @@ h3::after {
         cursor: pointer;
         display: inline-block;
         position: relative;
-        opacity: 1;
         .descripcion {
             position: absolute;
             top: 0;
@@ -46,11 +45,14 @@ h3::after {
             padding: 10px;
             margin: 0;
         }
+        .card-img-top {
+            opacity: 1;
+            transition: opacity 250ms ease-in-out;
+        }
         .card-img-top:hover {
             opacity: 0.4;
-            transition: opacity 250ms;
+            transition: opacity 250ms ease-in-out;
         }
-        transition: opacity 250ms;
     }
     .card-body {
         border: none;

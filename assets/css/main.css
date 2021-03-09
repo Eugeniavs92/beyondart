@@ -122,9 +122,7 @@ h3::after {
     text-align: center;
     cursor: pointer;
     display: inline-block;
-    position: relative;
-    opacity: 1;
-    transition: opacity 250ms; }
+    position: relative; }
     .card-container .card .descripcion {
       position: absolute;
       top: 0;
@@ -132,9 +130,12 @@ h3::after {
       z-index: -1;
       padding: 10px;
       margin: 0; }
+    .card-container .card .card-img-top {
+      opacity: 1;
+      transition: opacity 250ms ease-in-out; }
     .card-container .card .card-img-top:hover {
       opacity: 0.4;
-      transition: opacity 250ms; }
+      transition: opacity 250ms ease-in-out; }
   .card-container .card-body {
     border: none; }
 
