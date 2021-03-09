@@ -39,21 +39,44 @@ footer {
     margin-left: 89.5px; }
   .navbar .nav-item {
     margin-left: 41px; }
+    .navbar .nav-item a {
+      position: relative;
+      display: block; }
+    .navbar .nav-item a:hover {
+      background: none; }
+    .navbar .nav-item a::after {
+      content: '';
+      position: absolute;
+      display: flex;
+      bottom: 0;
+      left: 0;
+      height: 2.5px;
+      width: 100%;
+      background: linear-gradient(to right, #ff0000, #ff0000);
+      z-index: 1;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.25s ease-in-out; }
+    .navbar .nav-item a:hover::after {
+      transform: scaleX(1); }
+    .navbar .nav-item #beyond::after {
+      background: #A9F6FE; }
+    .navbar .nav-item #portfolio::after {
+      background: #D8FF8C; }
+    .navbar .nav-item #escuela-digital::after {
+      background: #C48AF0; }
+    .navbar .nav-item #proyecto-social::after {
+      background: #F1B376; }
+    .navbar .nav-item #shop::after {
+      background: #FC95FF; }
+    .navbar .nav-item #contacto::after {
+      background: #A9F6FE; }
   .navbar .nav-item:first-child {
     margin-left: 19px; }
   .navbar .nav-link {
     font-weight: 600;
     color: black;
     text-decoration: none; }
-  .navbar .beyond:hover {
-    color: red; }
-  .navbar .beyond::after {
-    content: '';
-    position: absolute;
-    display: flex;
-    background-color: red;
-    height: 4px;
-    width: 6%; }
   .navbar .nav-social {
     margin-right: 30px; }
     .navbar .nav-social a {
@@ -96,7 +119,22 @@ h3::after {
     margin-top: 26px; }
   .card-container .card {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-    text-align: center; }
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    transition: opacity 250ms; }
+    .card-container .card .descripcion {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      padding: 10px;
+      margin: 0; }
+    .card-container .card .card-img-top:hover {
+      opacity: 0.4;
+      transition: opacity 250ms; }
   .card-container .card-body {
     border: none; }
 
