@@ -418,7 +418,127 @@ const EscuelaDigitalComponent = {
 }
 const ProyectoSocialComponent = {
     render: ()=>{
-        console.log("proyecto")
+        return `<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../assets/images/testCarrousel.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/images/testCarrousel.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="../assets/images/testCarrousel.png" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-ba mt-5">
+        <div class="texto-container">
+            <div class="subtitulo">
+                Proyecto Social
+            </div>
+            <div class="texto">
+                De la mano de Beyond Art, nace esta hermosa iniciativa que nos trae a nosotros, un grupo de jóvenes artistas latinoamericanos, a compartir nuestros conocimientos y experiencias artísticas con la comunidad. Creemos en el arte como una experiencia de transformación
+                social y personal y en la educación artística experimental. Nuestro objetivo es, además de enseñar valores humanos y sociales a través del arte, hacer llegar nuestros diversos talleres artísticos a las personas que más lo necesiten, ofreciendo
+                la posibilidad de recibir educación artística orientada a las necesidades de cada uno. La modalidad será virtual mediante encuentros semanales en los que se dictarán distintos talleres artísticos por los líderes del proyecto.
+            </div>
+        </div>
+
+        <h3 class="titulo">PRÓXIMAS FECHAS</h3>
+
+        <div class="row">
+            <div class="card card-taller">
+                <div class="card-body">
+                    <div class="card-autor">Por Joaquín Ogusco y Alessandra Cortez</div>
+                    <div class="card-title-ba">Del 14 de Mayo al 09 de Septiembre</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-taller">
+                <div class="card-body">
+                    <div class="card-autor">Por Joaquín Ogusco y Alessandra Cortez</div>
+                    <div class="card-title-ba">Del 14 de Mayo al 09 de Septiembre</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-taller">
+                <div class="card-body">
+                    <div class="card-autor">Por Joaquín Ogusco y Alessandra Cortez</div>
+                    <div class="card-title-ba">Del 14 de Mayo al 09 de Septiembre</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-taller">
+                <div class="card-body">
+                    <div class="card-autor">Por Joaquín Ogusco y Alessandra Cortez</div>
+                    <div class="card-title-ba">Del 14 de Mayo al 09 de Septiembre</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-outline-primary">VER MÁS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="titulo">LÍDERES</h3>
+
+        <div class="row">
+            <div class="card-lideres">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+            </div>
+        </div>
+
+        <h3 class="titulo">NOS AUSPICIAN</h3>
+
+        <div class="row">
+            <div class="card-auspiciantes">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <img src="../assets/images/testCarrousel.png">
+                <div class="text-center">
+                    <button class="btn btn-outline-warning btn-membresia text-center">QUIERO SER AUSPICIADOR</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="titulo">¿QUERÉS COLABORAR?</h3>
+
+        <div class="texto-container">
+            <div class="subtitulo">
+                Tu donación nos ayuda a crecer
+            </div>
+            <div class="texto">
+                Este proyecto no sería posible si no fuese por las personas que ayudan mediante distintas colaboraciones. Éstas son muy importantes para lograr la sostenibilidad del proyecto y hacen posible nuestro crecimiento.
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline-warning btn-membresia text-center">QUIERO DONAR</button>
+            </div>
+        </div>
+
+    </div>`
     },
     postRender: ()=>{
 
