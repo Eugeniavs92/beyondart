@@ -314,6 +314,51 @@ h3::after {
     margin-left: 19px;
     margin-bottom: 30px; }
 
+.img-container {
+  height: auto;
+  width: 100%;
+  background-image: url("../../images/testCarrousel.png"); }
+
+.texto-contacto {
+  margin-bottom: 26px; }
+
+.formulario-contacto .input-form {
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #EC933C;
+  margin-bottom: 26px;
+  padding-left: 10px;
+  background-color: #ec933c14; }
+
+.formulario-contacto .label-form {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500; }
+
+.formulario-contacto input[type=button] {
+  color: #EC933C;
+  border: 1px solid #EC933C; }
+
+.formulario-contacto textarea {
+  width: 100%;
+  height: 147px;
+  border: 1px solid #EC933C;
+  margin-bottom: 35px;
+  resize: none;
+  background-color: #ec933c14; }
+
+.formulario-contacto input[type=button]:hover {
+  color: white;
+  background-color: #EC933C; }
+
+.formulario-contacto input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
 html,
 body {
   height: 100%;
