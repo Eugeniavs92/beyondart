@@ -34,7 +34,7 @@ footer {
 .navbar {
   background-color: #fff;
   font-size: 15px;
-  height: 77px; }
+  padding: 15px; }
   .navbar .navbar-nav {
     margin-left: 89.5px; }
   .navbar .nav-item {
@@ -51,7 +51,7 @@ footer {
       bottom: 0;
       left: 0;
       height: 2.5px;
-      width: 100%;
+      width: 80%;
       background: linear-gradient(to right, #ff0000, #ff0000);
       z-index: 1;
       transform: scaleX(0);
@@ -89,8 +89,11 @@ footer {
   .navbar .fa-instagram {
     margin-right: 58px; }
 
+.col-sm {
+  padding-left: 0;
+  padding-right: 0; }
+
 .carousel-item {
-  position: relative;
   height: 598.29px; }
 
 .titulo {
@@ -113,19 +116,25 @@ h3::after {
   margin: 19px 0 0 27px;
   background-color: #989898; }
 
-.card-container {
-  margin: 0 100px; }
-  .card-container .card-deck {
-    margin-top: 26px; }
-  .card-container .card {
+.card-container-ba {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap; }
+  .card-container-ba .card {
+    height: 275px;
+    width: 275px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     text-align: center;
     cursor: pointer;
     position: relative;
     opacity: 1;
-    transition: opacity 250ms ease-in-out;
-    overflow: hidden; }
-    .card-container .card .descripcion {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin-left: 25px;
+    margin-bottom: 26px;
+    transition: opacity 250ms ease-in-out; }
+    .card-container-ba .card .descripcion-container {
       display: none;
       position: absolute;
       bottom: 0;
@@ -135,18 +144,38 @@ h3::after {
       margin: 0;
       opacity: 1;
       transition: opacity 250ms ease-in-out; }
-      .card-container .card .descripcion h5 {
+      .card-container-ba .card .descripcion-container .titulo-obra {
         margin-top: 10px; }
-  .card-container .trabajos:hover {
-    opacity: 0.4;
-    transition: opacity 250ms ease-in-out; }
-    .card-container .trabajos:hover .descripcion {
-      display: block; }
-  .card-container .card-body {
-    border: none; }
+  .card-container-ba .card-box {
+    margin-bottom: 40px; }
+    .card-container-ba .card-box .card-shop {
+      height: 275px;
+      width: 275px;
+      text-align: center;
+      display: inline-block;
+      margin-left: 23px;
+      margin-bottom: 40px; }
+      .card-container-ba .card-box .card-shop img {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 12px; }
+      .card-container-ba .card-box .card-shop .tipo-articulo {
+        margin-bottom: 7px;
+        font-size: 14px;
+        font-weight: 400; }
+      .card-container-ba .card-box .card-shop .titulo-obra {
+        font-size: 18px;
+        margin-bottom: 7px; }
+      .card-container-ba .card-box .card-shop .precio {
+        font-size: 15px;
+        font-weight: 400; }
 
-.card-container:last-child {
-  margin-bottom: 100px; }
+.trabajos:hover {
+  opacity: 0.4;
+  transition: opacity 250ms ease-in-out; }
+  .trabajos:hover .descripcion-container {
+    display: block; }
 
 .about-ale .sub-container {
   height: 482px; }
@@ -468,3 +497,11 @@ body {
 
 .fadeIn {
   animation-name: fadeIn; }
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1250px; } }

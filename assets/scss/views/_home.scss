@@ -1,5 +1,9 @@
+.col-sm {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .carousel-item {
-    position: relative;
     height: 598.29px;
 }
 
@@ -26,20 +30,25 @@ h3::after {
     background-color: #989898;
 }
 
-.card-container {
-    margin: 0 100px;
-    .card-deck {
-        margin-top: 26px
-    }
+.card-container-ba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
     .card {
+        height: 275px;
+        width: 275px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
         text-align: center;
         cursor: pointer;
         position: relative;
         opacity: 1;
-        transition: opacity 250ms ease-in-out;
         overflow: hidden;
-        .descripcion {
+        border: 1px solid #ccc;
+        margin-left: 25px;
+        margin-bottom: 26px;
+        transition: opacity 250ms ease-in-out;
+        .descripcion-container {
             display: none;
             position: absolute;
             bottom: 0;
@@ -49,23 +58,58 @@ h3::after {
             margin: 0;
             opacity: 1;
             transition: opacity 250ms ease-in-out;
-            h5 {
+            .titulo-obra {
                 margin-top: 10px;
             }
         }
     }
-    .trabajos:hover {
-        opacity: 0.4;
-        transition: opacity 250ms ease-in-out;
-        .descripcion {
-            display: block;
+    .card-box {
+        margin-bottom: 40px;
+        .card-shop {
+            height: 275px;
+            width: 275px;
+            text-align: center;
+            display: inline-block;
+            margin-left: 23px;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 12px;
+            }
+            .tipo-articulo {
+                margin-bottom: 7px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .titulo-obra {
+                font-size: 18px;
+                margin-bottom: 7px;
+            }
+            .precio {
+                font-size: 15px;
+                font-weight: 400;
+            }
         }
-    }
-    .card-body {
-        border: none;
     }
 }
 
-.card-container:last-child {
-    margin-bottom: 100px;
+.trabajos:hover {
+    opacity: 0.4;
+    transition: opacity 250ms ease-in-out;
+    .descripcion-container {
+        display: block;
+    }
 }
+
+// @media (max-width: 991px) {
+//     .card-container-ba .card {
+//         width: 29%;
+//     }
+// }
+// @media (max-width: 991px) {
+//     .card-container-ba .card {
+//         width: 70%;
+//     }
+// }
