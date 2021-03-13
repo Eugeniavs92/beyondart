@@ -22,7 +22,7 @@
             bottom: 0;
             left: 0;
             height: 2.5px;
-            width: 80%;
+            width: 100%;
             background: linear-gradient(to right, #ff0000, #ff0000);
             z-index: 1;
             transform: scaleX(0);
@@ -30,7 +30,7 @@
             transition: transform 0.25s ease-in-out;
         }
         a:hover::after {
-            transform: scaleX(1);
+            transform: scaleX(0.7);
         }
         #beyond::after {
             background: $beyond;
