@@ -1,23 +1,9 @@
 @import '../views/escuela-digital';
 .secciones {
     margin-bottom: 54px;
-    div {
-        display: inline-block;
-    }
-}
-
-.card-lideres {
-    .card-shop {
-        width: 20%;
-        text-align: center;
-        display: inline-block;
-        margin-left: 23px;
-        margin-bottom: 40px;
-    }
-    img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 12px;
+    .secciones-lista {
+        justify-content: space-evenly;
+        list-style-type: none;
+        display: flex;
     }
 }

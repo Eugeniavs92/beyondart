@@ -91,16 +91,12 @@
   .navbar .fa-instagram {
     margin-right: 58px; }
 
-.col-sm {
-  padding-left: 0;
-  padding-right: 0; }
-
 .carousel-item {
   height: 598.29px; }
 
 .titulo {
   text-align: center;
-  margin: 78px auto 52px auto; }
+  margin: 63px auto 52px auto; }
 
 h3::before {
   content: '';
@@ -121,7 +117,7 @@ h3::after {
 .card-container-ba {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-flow: wrap; }
   .card-container-ba .card {
     height: 275px;
@@ -180,30 +176,11 @@ h3::after {
   .trabajos:hover .descripcion-container {
     display: block; }
 
-.about-ale .sub-container {
-  height: 482px; }
-
-.about-ale img {
-  float: left;
-  margin-right: 30px; }
-
-.about-beyond {
-  margin: 100px 0; }
-  .about-beyond img {
-    float: right;
-    margin-left: 30px; }
-
-.text-container .subtitulo {
-  font-weight: 500;
-  font-size: 35px; }
-
-.text-container .texto {
-  margin-top: 13px;
-  font-size: 18px;
-  font-weight: 400; }
-
-.ba {
-  margin-top: 120px; }
+@media (max-width: 768px) {
+  h3::before {
+    display: none; }
+  h3::after {
+    display: none; } }
 
 .btn-ba {
   bottom: 0;
@@ -215,67 +192,35 @@ h3::after {
   color: white;
   background-color: #EC933C; }
 
-.texto-container {
-  margin: 43 0 65 0; }
-  .texto-container .subtitulo {
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 43.35px; }
-  .texto-container .texto {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26.01px; }
+#about-ale,
+#about-beyond {
+  height: 482px;
+  width: 573px; }
 
-.container-ba {
-  width: 92%;
-  margin: 50px auto; }
-  .container-ba .card-taller {
-    width: 23%;
-    background: white;
-    border: 1px solid #ccc;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    transition: 0.3s;
-    border-top: 7px solid #A9F6FE;
-    font-size: 15px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); }
-    .container-ba .card-taller .card-taller-img {
-      height: 143px;
-      width: 100%; }
-    .container-ba .card-taller .card-body {
-      padding: 19px 14px 27px 18px; }
-      .container-ba .card-taller .card-body .card-title-ba {
-        margin-bottom: 9px;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 1px; }
-      .container-ba .card-taller .card-body .card-autor {
-        font-size: 12px;
-        font-style: italic;
-        margin-bottom: 12px; }
-      .container-ba .card-taller .card-body a {
-        margin-right: auto;
-        color: #A9F6FE;
-        border-color: #A9F6FE; }
-      .container-ba .card-taller .card-body a:hover {
-        color: white;
-        background-color: #A9F6FE; }
-  .container-ba .btn-membresia {
-    border-color: #EC933C;
-    margin-top: 32px;
-    color: #EC933C; }
-  .container-ba .btn-membresia:hover {
-    color: white;
-    background-color: #EC933C; }
+.text-container .titulo-beyond {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 13px; }
 
-.card-lideres {
-  box-sizing: border-box;
-  text-align: center; }
-  .card-lideres img {
-    width: 20%;
-    height: 275px;
-    margin-bottom: 44px;
-    margin-left: 20px; }
+.text-container .texto-beyond {
+  font-size: 18px;
+  font-weight: 400; }
+
+.text-container #btn-trabajos-beyond {
+  margin-top: 116px; }
+
+.text-container #btn-acerca-beyond {
+  margin-top: 31px; }
+
+@media (max-width: 768px) {
+  img {
+    width: 100%; }
+  .text-container #btn-trabajos-beyond {
+    margin-top: 30px; }
+  #about-beyond {
+    margin-top: 30px; }
+  #about-ale {
+    margin-bottom: 30px; } }
 
 .texto-container {
   margin: 43 0 65 0; }
@@ -288,56 +233,45 @@ h3::after {
     font-weight: 400;
     line-height: 26.01px; }
 
-.container-ba {
-  width: 92%;
-  margin: 50px auto; }
-  .container-ba .card-taller {
-    width: 23%;
-    background: white;
-    border: 1px solid #ccc;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    transition: 0.3s;
-    border-top: 7px solid #A9F6FE;
-    font-size: 15px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); }
-    .container-ba .card-taller .card-taller-img {
-      height: 143px;
-      width: 100%; }
-    .container-ba .card-taller .card-body {
-      padding: 19px 14px 27px 18px; }
-      .container-ba .card-taller .card-body .card-title-ba {
-        margin-bottom: 9px;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 1px; }
-      .container-ba .card-taller .card-body .card-autor {
-        font-size: 12px;
-        font-style: italic;
-        margin-bottom: 12px; }
-      .container-ba .card-taller .card-body a {
-        margin-right: auto;
-        color: #A9F6FE;
-        border-color: #A9F6FE; }
-      .container-ba .card-taller .card-body a:hover {
-        color: white;
-        background-color: #A9F6FE; }
-  .container-ba .btn-membresia {
-    border-color: #EC933C;
-    margin-top: 32px;
-    color: #EC933C; }
-  .container-ba .btn-membresia:hover {
-    color: white;
-    background-color: #EC933C; }
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border-top: 7px solid #a9f6fe; }
+  .card .card-img-top-talleres {
+    height: 143px; }
+  .card .card-body {
+    padding: 19px 14px 27px 18px; }
+    .card .card-body .card-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 9px !important; }
+    .card .card-body .card-subtitle {
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 12px !important; }
+    .card .card-body .card-text {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 19px !important; }
+    .card .card-body .btn-talleres-container {
+      text-align: center; }
+    .card .card-body #btn-taller {
+      border-color: #a9f6fe;
+      color: #a9f6fe; }
+    .card .card-body #btn-taller:hover {
+      color: white;
+      background-color: #a9f6fe; }
 
-.card-lideres {
-  box-sizing: border-box;
-  text-align: center; }
-  .card-lideres img {
-    width: 20%;
-    height: 275px;
-    margin-bottom: 44px;
-    margin-left: 20px; }
+.btn-membresia {
+  border-color: #EC933C;
+  margin-top: 32px;
+  color: #EC933C; }
+
+.btn-membresia:hover {
+  color: white;
+  background-color: #EC933C; }
 
 .card-auspiciantes {
   box-sizing: border-box;
@@ -348,10 +282,26 @@ h3::after {
     margin-left: 19px;
     margin-bottom: 30px; }
 
+.card-body .card-subtitle-fechas {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400; }
+
+.card-body .card-title-fechas {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500; }
+
+.card-body .card-text-fechas {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400; }
+
 .img-container {
-  height: auto;
-  width: 100%;
-  background-image: url("../../images/testCarrousel.png"); }
+  height: 88%;
+  width: 100%; }
+  .img-container img {
+    object-fit: cover; }
 
 .texto-contacto {
   margin-bottom: 26px; }
@@ -386,12 +336,21 @@ h3::after {
   color: white;
   background-color: #EC933C; }
 
-.formulario-contacto input:focus, .formulario-contacto textarea:focus {
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
   outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none; }
+
+@media (max-width: 768px) {
+  h3::before {
+    display: none; }
+  h3::after {
+    display: none; }
+  .img-container {
+    margin-top: 30px; } }
 
 .texto-container {
   margin: 43 0 65 0; }
@@ -404,74 +363,52 @@ h3::after {
     font-weight: 400;
     line-height: 26.01px; }
 
-.container-ba {
-  width: 92%;
-  margin: 50px auto; }
-  .container-ba .card-taller {
-    width: 23%;
-    background: white;
-    border: 1px solid #ccc;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    transition: 0.3s;
-    border-top: 7px solid #A9F6FE;
-    font-size: 15px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25); }
-    .container-ba .card-taller .card-taller-img {
-      height: 143px;
-      width: 100%; }
-    .container-ba .card-taller .card-body {
-      padding: 19px 14px 27px 18px; }
-      .container-ba .card-taller .card-body .card-title-ba {
-        margin-bottom: 9px;
-        font-size: 18px;
-        font-weight: 500;
-        padding-left: 1px; }
-      .container-ba .card-taller .card-body .card-autor {
-        font-size: 12px;
-        font-style: italic;
-        margin-bottom: 12px; }
-      .container-ba .card-taller .card-body a {
-        margin-right: auto;
-        color: #A9F6FE;
-        border-color: #A9F6FE; }
-      .container-ba .card-taller .card-body a:hover {
-        color: white;
-        background-color: #A9F6FE; }
-  .container-ba .btn-membresia {
-    border-color: #EC933C;
-    margin-top: 32px;
-    color: #EC933C; }
-  .container-ba .btn-membresia:hover {
-    color: white;
-    background-color: #EC933C; }
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  border-top: 7px solid #a9f6fe; }
+  .card .card-img-top-talleres {
+    height: 143px; }
+  .card .card-body {
+    padding: 19px 14px 27px 18px; }
+    .card .card-body .card-title {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      margin-bottom: 9px !important; }
+    .card .card-body .card-subtitle {
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 12px !important; }
+    .card .card-body .card-text {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 19px !important; }
+    .card .card-body .btn-talleres-container {
+      text-align: center; }
+    .card .card-body #btn-taller {
+      border-color: #a9f6fe;
+      color: #a9f6fe; }
+    .card .card-body #btn-taller:hover {
+      color: white;
+      background-color: #a9f6fe; }
 
-.card-lideres {
-  box-sizing: border-box;
-  text-align: center; }
-  .card-lideres img {
-    width: 20%;
-    height: 275px;
-    margin-bottom: 44px;
-    margin-left: 20px; }
+.btn-membresia {
+  border-color: #EC933C;
+  margin-top: 32px;
+  color: #EC933C; }
+
+.btn-membresia:hover {
+  color: white;
+  background-color: #EC933C; }
 
 .secciones {
   margin-bottom: 54px; }
-  .secciones div {
-    display: inline-block; }
-
-.card-lideres .card-shop {
-  width: 20%;
-  text-align: center;
-  display: inline-block;
-  margin-left: 23px;
-  margin-bottom: 40px; }
-
-.card-lideres img {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 12px; }
+  .secciones .secciones-lista {
+    justify-content: space-evenly;
+    list-style-type: none;
+    display: flex; }
 
 html,
 body {

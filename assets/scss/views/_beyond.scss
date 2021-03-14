@@ -1,37 +1,3 @@
-.about-ale {
-    .sub-container {
-        height: 482px;
-    }
-    img {
-        float: left;
-        margin-right: 30px;
-    }
-}
-
-.about-beyond {
-    margin: 100px 0;
-    img {
-        float: right;
-        margin-left: 30px;
-    }
-}
-
-.text-container {
-    .subtitulo {
-        font-weight: 500;
-        font-size: 35px;
-    }
-    .texto {
-        margin-top: 13px;
-        font-size: 18px;
-        font-weight: 400;
-    }
-}
-
-.ba {
-    margin-top: 120px;
-}
-
 .btn-ba {
     bottom: 0;
     font-weight: 600px;
@@ -42,4 +8,45 @@
 .btn-ba:hover {
     color: white;
     background-color: $btn-ba;
+}
+
+#about-ale,
+#about-beyond {
+    height: 482px;
+    width: 573px;
+}
+
+.text-container {
+    .titulo-beyond {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 13px;
+    }
+    .texto-beyond {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #btn-trabajos-beyond {
+        margin-top: 116px;
+    }
+    #btn-acerca-beyond {
+        margin-top: 31px;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+    .text-container {
+        #btn-trabajos-beyond {
+            margin-top: 30px;
+        }
+    }
+    #about-beyond {
+        margin-top: 30px;
+    }
+    #about-ale {
+        margin-bottom: 30px;
+    }
 }

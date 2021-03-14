@@ -1,15 +1,10 @@
-.col-sm {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .carousel-item {
     height: 598.29px;
 }
 
 .titulo {
     text-align: center;
-    margin: 78px auto 52px auto;
+    margin: 63px auto 52px auto;
 }
 
 h3::before {
@@ -33,12 +28,12 @@ h3::after {
 .card-container-ba {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-flow: wrap;
     .card {
         height: 275px;
         width: 275px;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: $shadow;
         text-align: center;
         cursor: pointer;
         position: relative;
@@ -104,13 +99,11 @@ h3::after {
     }
 }
 
-// @media (max-width: 991px) {
-//     .card-container-ba .card {
-//         width: 29%;
-//     }
-// }
-// @media (max-width: 991px) {
-//     .card-container-ba .card {
-//         width: 70%;
-//     }
-// }
+@media (max-width: 768px) {
+    h3::before {
+        display: none;
+    }
+    h3::after {
+        display: none;
+    }
+}

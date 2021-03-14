@@ -13,65 +13,53 @@
     }
 }
 
-.container-ba {
-    width: 92%;
-    margin: 50px auto;
-    .card-taller {
-        width: 23%;
-        background: white;
-        border: 1px solid #ccc;
-        margin-bottom: 30px;
-        margin-left: 20px;
-        transition: 0.3s;
-        border-top: 7px solid #A9F6FE;
-        font-size: $font-size;
-        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-        .card-taller-img {
-            height: 143px;
-            width: 100%;
-        }
-        .card-body {
-            padding: 19px 14px 27px 18px;
-            .card-title-ba {
-                margin-bottom: 9px;
-                font-size: 18px;
-                font-weight: 500;
-                padding-left: 1px;
-            }
-            .card-autor {
-                font-size: 12px;
-                font-style: italic;
-                margin-bottom: 12px;
-            }
-            a {
-                margin-right: auto;
-                color: #A9F6FE;
-                border-color: #A9F6FE;
-            }
-            a:hover {
-                color: white;
-                background-color: #A9F6FE;
-            }
-        }
+.card {
+    box-shadow: $shadow;
+    border-top: 7px solid rgba(169, 246, 254, 1);
+    .card-img-top-talleres {
+        height: 143px;
     }
-    .btn-membresia {
-        border-color: #EC933C;
-        margin-top: 32px;
-        color: #EC933C;
-    }
-    .btn-membresia:hover {
-        color: white;
-        background-color: #EC933C;
+    .card-body {
+        padding: 19px 14px 27px 18px;
+        .card-title {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 9px !important;
+        }
+        .card-subtitle {
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 12px !important;
+        }
+        .card-text {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 19px !important;
+        }
+        .btn-talleres-container {
+            text-align: center;
+        }
+        #btn-taller {
+            border-color: rgba(169, 246, 254, 1);
+            color: rgba(169, 246, 254, 1);
+        }
+        #btn-taller:hover {
+            color: white;
+            background-color: rgba(169, 246, 254, 1);
+        }
     }
 }
 
-.card-lideres {
-    box-sizing: border-box;
-    text-align: center;
-    img {
-        width: 20%;
-        height: 275px;
-        margin-bottom: 44px;
-        margin-left: 20px;
-    }
+.btn-membresia {
+    border-color: #EC933C;
+    margin-top: 32px;
+    color: #EC933C;
+}
+
+.btn-membresia:hover {
+    color: white;
+    background-color: #EC933C;
 }
