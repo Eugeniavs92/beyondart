@@ -18,38 +18,40 @@
 
 <body class="animated fadeIn">
 
-    <nav class="navbar fixed-top navbar-expand-md">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../index.html">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" id='beyond' href="./beyondart.html">BEYOND ART</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="beyond" href="./beyondart.html">BEYOND ART  </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id='portfolio' href="./portfolio.html">PORTFOLIO</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="portfolio" href="./portfolio.html">PORTFOLIO </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="escuela-digital" href="./escuela-digital.html">ESCUELA DIGITAL</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="escuela-digital" href="./escuela-digital.html">ESCUELA DIGITAL </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="proyecto-social" href="#">PROYECTO SOCIAL</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="proyecto-social" href="#">PROYECTO SOCIAL </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="shop" href="./shop.html">SHOP</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="shop" href="./shop.html">SHOP </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contacto" href="./contacto.html">CONTACTO</a>
+                <li class="nav-item active">
+                    <a class="nav-link" id="contacto" href="./contacto.html">CONTACTO </a>
                 </li>
+
             </ul>
-        </div>
-        <div class="nav-social">
-            <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-            <a href="https://www.instagram.com/beyondartbyale/">
-                <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-            </a>
+            <form class="form-inline my-2 my-lg-0">
+                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+                <a href="https://www.instagram.com/beyondartbyale/" target="_blank">
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </a>
+            </form>
         </div>
     </nav>
 
@@ -176,45 +178,48 @@
     </div>
 
     <footer class="footer">
-        <div class="footer-container container-fluid">
+        <div class="footer-img">
             <img src="../assets/images/logoba.png">
-
-            <div class="footer-container">
-                <div class="articles">
-                    BEYOND ART
-                    <a href="#">Acerca de</a>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Shop</a>
-                </div>
-
-                <div class="articles">
-                    PROYECTO SOCIAL
-                    <a href="#">Acerca del proyecto</a>
-                    <a href="#">Próximas fechas</a>
-                    <a href="#">Ser auspiciador</a>
-                </div>
-
-                <div class="articles">
-                    ESCUELA DIGITAL
-                    <a href="#">Nuestros talleres</a>
-                    <a href="#">Líderes</a>
-                    <a href="#">Membresía</a>
-                </div>
-
-                <div class="articles">
-                    SÍGUEME
-                    <a href="https://www.instagram.com/beyondartbyale/" target="_blank">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Youtube</a>
-                </div>
-            </div>
         </div>
-
+        <ul class="footer-info">
+            <li>
+                <strong>BEYOND ART</strong>
+                <ul class="box">
+                    <li><a href="./beyondart.html">Acerca de</a></li>
+                    <li><a href="./portfolio.html">Trabajos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./shop.html">Shop</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>PROYECTO SOCIAL</strong>
+                <ul class="box">
+                    <li><a href="">Acerca del proyecto</a></li>
+                    <li><a href="">Próximas fechas</a></li>
+                    <li><a href="">Ser auspiciador</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>ESCUELA DIGITAL</strong>
+                <ul class="box">
+                    <li><a href="">Nuestros talleres</a></li>
+                    <li><a href="">Líderes</a></li>
+                    <li><a href="">Membresía</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>SÍGUEME</strong>
+                <ul class="box">
+                    <li><a href="https://www.instagram.com/beyondartbyale/" target="_blank">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            TODOS LOS DERECHOS RESERVADOS &copy;BeyondArt . DISEÑADO POR <a href="https://www.linkedin.com/in/candela-gaitan/">Candela Gaitán</a> . DESARROLLADO POR <a href="https://www.linkedin.com/in/conradolanusse/">Conrado Lanusse</a> y <a href="https://www.linkedin.com/in/eugeniavargassilva/">Maria Eugenia</a>.
+        </div>
     </footer>
-    <div class="rights">
-        TODOS LOS DERECHOS RESERVADOS. DISEÑADO POR . DESARROLLADO POR .
-    </div>
 
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
