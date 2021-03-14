@@ -330,7 +330,8 @@ h3::after {
   border: 1px solid #EC933C;
   margin-bottom: 35px;
   resize: none;
-  background-color: #ec933c14; }
+  background-color: #ec933c14;
+  padding: 10px; }
 
 .formulario-contacto input[type=button]:hover {
   color: white;
