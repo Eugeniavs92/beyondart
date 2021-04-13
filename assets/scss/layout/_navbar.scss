@@ -1,65 +1,156 @@
 @import '../utilities/variables';
+
+.navbar-brand {
+    position: absolute;
+    left: -40px;
+    width: 288px;
+    top: -10px;
+    height: 114px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    z-index: 1;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 25%);
+
+    
+    img {
+        width:80px;
+        z-index: 1;
+    }
+}
 .navbar {
     background-color: #fff;
     font-size: $font-size;
-    padding: 15px;
+    height: 77px;
+    padding: 10px 0;
+    z-index: 2;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 25%);
+    position: relative;
+    padding-left: 222px;
+    @media (max-width: 991px) {
+        justify-content: flex-end;
+        padding-left: 0;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 77px;
+        width: 90px;
+        background: #FFF;
+        top: 0;
+        left: 210px;
+        z-index: 2;
+    }
+    button {
+        margin-right: 40px;
+    }
+    div.collapse {
+        justify-content: space-between;
+        z-index: 2;
+        padding: 0;
+        display: block;
+    }
     .navbar-nav {
-        margin-left: 89.5px;
+        align-items: center;
+        justify-content: start;        
+        z-index: 4;
+        position: relative;
+        
+        @media (max-width: 991px) {
+            transition: all .5s ease-out;
+            background: #FFFFFF;
+            padding-bottom: 20px;
+            padding-top: 18px;
+            margin-top: -100%;
+            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+        }
+
+        #navbar-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 26px;
+            background: transparent;
+            color: rgba(0,0,0,.5);
+            border: none;
+            &:focus {
+                outline: none;
+            }
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+
+    .navbar-active {
+        margin-top: -50px;
     }
     .nav-item {
-        margin-left: 41px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         a {
+            color: #262525;
+            margin-right: 22px;
+            text-align: center;
             position: relative;
             display: block;
-        }
-        a:hover {
-            background: none;
+            font-size: 15px;
+
+            &:hover {
+                background: none;
+            }
         }
         a::after {
             content: '';
             position: absolute;
             display: flex;
             bottom: 0;
-            left: 0;
+            left: 50%;
             height: 2.5px;
-            width: 100%;
-            background: linear-gradient(to right, #ff0000, #ff0000);
+            width: 0;
             z-index: 1;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
         }
-        a:hover::after {
-            transform: scaleX(0.7);
+        a::before {
+            content: '';
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            right: 50%;
+            height: 2.5px;
+            width: 0;
+            z-index: 1;
+            transition: all 0.25s ease-in-out;
         }
-        #beyond::after {
+        
+        a:hover::after, a:hover::before {
+            width: 35%;
+        }
+        #beyond::after, #beyond::before {
             background: $beyond;
         }
-        #portfolio::after {
+        #portfolio::after, #portfolio::before {
             background: $portfolio;
         }
-        #escuela-digital::after {
+        #escuela-digital::after,#escuela-digital::before {
             background: $escuela-digital;
         }
-        #proyecto-social::after {
+        #proyecto-social::after, #proyecto-social::before {
             background: $proyecto-social;
         }
-        #shop::after {
+        #shop::after, #shop::before {
             background: $shop;
         }
-        #contacto::after {
+        #contacto::after, #contacto::before {
             background: $contacto;
         }
-        // @each $pointer,
-        // $effect in $nav-effects {
-        //     a::after [pointer="#{$pointer}"] {
-        //         background: $effect;
-        //     }
-        // }
     }
-    .nav-item:first-child {
-        margin-left: 19px;
-    }
+   
     .nav-link {
         font-weight: 600;
         color: black;
@@ -74,10 +165,20 @@
             color: #000;
         }
     }
-    .fa-facebook-square {
+    .nav-redes {
+        width: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         margin-right: 30px;
-    }
-    .fa-instagram {
-        margin-right: 58px;
+
+        i {
+            font-size: 35px;
+            color: #262525;
+        }
+        @media (max-width: 1077px) {
+            display: none;
+        }
+ 
     }
 }

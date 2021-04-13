@@ -1,0 +1,158 @@
+.border-top-frame1 {
+    border-top: 7px solid #A9F6FE;
+    box-shadow: 0px 0px 4px 4px rgba(169, 246, 254, 0.4);
+}
+.border-top-frame2 {
+    border-top: 7px solid #D8FF8C;
+    
+}
+.border-top-frame3 {
+    border-top: 7px solid #C48AF0;
+}
+.border-top-frame4 {
+    border-top: 7px solid #F1B376;
+}
+.border-top-frame5 {
+    border-top: 7px solid #FC95FF;
+}
+.border-top-frame6 {
+    border-top: 7px solid #FBD67B;
+}
+
+// btn frame
+.btn-frame1 {
+    color: #32D5E5;
+    border-color: #32D5E5;
+    &:hover {
+        background-color: #32D5E5;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(50, 213, 229, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+.btn-frame2 {
+    color: #B0EE38;
+    border-color: #B0EE38;
+    &:hover {
+        background-color: #B0EE38;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(176, 238, 56, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+.btn-frame3 {
+    color: #A847F1;
+    border-color: #A847F1;
+    &:hover {
+        background-color: #A847F1;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(168, 71, 241, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+.btn-frame4 {
+    color: #EBB124;
+    border-color: #EBB124;
+    &:hover {
+        background-color: #EBB124;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(235, 177, 36, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+.btn-frame5 {
+    color: #FA54FF;
+    border-color: #FA54FF;
+    &:hover {
+        background-color: #FA54FF;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(250, 84, 255, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+.btn-frame6 {
+    color: #EC933C;
+    border-color: #EC933C;
+    &:hover {
+        background-color: #EC933C;
+        color: #FFFFFF;
+        box-shadow: 0px 0px 5px 3px rgba(236, 147, 60, 0.7);
+    }
+    &:focus {
+        outline: none;
+        box-shadow: unset;
+    }
+    &:target {
+        outline: none;
+        box-shadow: unset;
+    }
+}
+
+
+
+
+
+
+
+// background-frames
+.frame12 {
+    background-color: rgba(169, 246, 254, 0.8);
+}
+.frame13 {
+    background-color: rgba(241, 179, 118, 0.8);
+}
+.frame14 {
+    background-color: rgba(216, 255, 140, 0.8);
+}
+.frame15 {
+    background-color: rgba(251, 214, 123, 0.8);
+}
+.frame16 {
+    background-color: rgba(196, 138, 240, 0.8);
+}
+.frame17 {
+    background-color: rgba(252, 149, 255, 0.8);
+}
+.frame18 {
+    background-color: rgba(241, 179, 118, 0.8);
+}
+.frame19 {
+    background-color: rgba(169, 246, 254, 0.8);
+}
+
+

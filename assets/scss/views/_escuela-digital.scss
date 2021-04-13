@@ -15,7 +15,6 @@
 
 .card {
     box-shadow: $shadow;
-    border-top: 7px solid rgba(169, 246, 254, 1);
     .card-img-top-talleres {
         height: 143px;
     }
@@ -24,6 +23,7 @@
         .card-title {
             font-size: 18px;
             font-style: normal;
+            text-transform: uppercase;
             font-weight: 500;
             margin-bottom: 9px !important;
         }
@@ -42,17 +42,20 @@
         .btn-talleres-container {
             text-align: center;
         }
-        #btn-taller {
-            border-color: rgba(169, 246, 254, 1);
-            color: rgba(169, 246, 254, 1);
-        }
-        #btn-taller:hover {
-            color: white;
-            background-color: rgba(169, 246, 254, 1);
-        }
     }
 }
-
+#talleres-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.taller {
+    width: 275px;
+    min-height: 380px;
+    margin-bottom: 40px;
+    // height: 400px;
+}
 .btn-membresia {
     border-color: #EC933C;
     margin-top: 32px;

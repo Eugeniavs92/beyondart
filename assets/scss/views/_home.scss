@@ -28,7 +28,7 @@ h3::after {
 .card-container-ba {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-flow: wrap;
     .card {
         height: 275px;
@@ -40,33 +40,70 @@ h3::after {
         opacity: 1;
         overflow: hidden;
         border: 1px solid #ccc;
-        margin-left: 25px;
+        // margin-left: 25px;
         margin-bottom: 26px;
-        transition: opacity 250ms ease-in-out;
-        .descripcion-container {
-            display: none;
+
+        .descripcion-container {        
             position: absolute;
-            bottom: 0;
             top: 0;
             left: 0;
             padding: 10px;
             margin: 0;
-            opacity: 1;
-            transition: opacity 250ms ease-in-out;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .4s ease-in-out;
+
             .titulo-obra {
-                margin-top: 10px;
+                font-size: 18px;
+                font-weight: 700;
+                font-family: $font;
+
+                &:after, &:before {
+                    display: none;
+                }
             }
         }
     }
     .card-box {
         margin-bottom: 40px;
         .card-shop {
+            position: relative;
             height: 275px;
             width: 275px;
             text-align: center;
             display: inline-block;
             margin-left: 23px;
             margin-bottom: 40px;
+            .descripcion-container {        
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10px;
+                margin: 0;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: all .4s ease-in-out;
+    
+                .titulo-obra {
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-family: $font;
+    
+                    &:after, &:before {
+                        display: none;
+                    }
+                }
+            }
             img {
                 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
                 width: 100%;
@@ -76,29 +113,40 @@ h3::after {
             }
             .tipo-articulo {
                 margin-bottom: 7px;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 400;
+                text-transform: uppercase;
             }
             .titulo-obra {
                 font-size: 18px;
+                font-weight: 500;
                 margin-bottom: 7px;
             }
             .precio {
                 font-size: 15px;
                 font-weight: 400;
             }
+
+            &:hover {
+                .descripcion-container {
+                    opacity: 1;
+                }
+            }
         }
     }
 }
 
+
+
 .trabajos:hover {
-    opacity: 0.4;
-    transition: opacity 250ms ease-in-out;
+ 
     .descripcion-container {
-        display: block;
+        opacity: 1;
     }
 }
-
+// .trabajos, .card {
+//     margin-right: 10px;
+// }
 @media (max-width: 768px) {
     h3::before {
         display: none;
