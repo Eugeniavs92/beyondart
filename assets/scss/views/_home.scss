@@ -6,25 +6,40 @@
     text-align: center;
     margin: 63px auto 52px auto;
 }
-
+h3 {
+    position: relative;
+}
 h3::before {
     content: '';
     position: absolute;
+    left: 50%;
     height: 2px;
-    width: 212px;
-    margin: 19px 0 0 -250px;
+    width: 215px;
+    margin: 19px 0;
+    transform: translateX(-400px);
     background-color: #989898;
+
+    @media (max-width: 992px) {
+        transform: translateX(-370px);
+        width: 188px;
+    }
 }
 
 h3::after {
     content: '';
     position: absolute;
+    right: 50%;
     height: 2px;
-    width: 212px;
-    margin: 19px 0 0 27px;
+    width: 215px;
+    margin: 19px 0;
+    transform: translateX(400px);
     background-color: #989898;
+    
+    @media (max-width: 992px) {
+        transform: translateX(370px);
+        width: 188px;
+    }
 }
-
 .card-container-ba {
     display: flex;
     flex-direction: row;

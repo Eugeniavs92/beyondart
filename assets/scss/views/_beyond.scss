@@ -10,13 +10,32 @@
     background-color: $btn-ba;
 }
 
-#about-ale,
-#about-beyond {
-    height: 482px;
-    width: 573px;
+.beyond-info {
+    margin-bottom: 80px;
+    justify-content: space-between;
+    .beyond-info-inner {
+        flex: 0 0 50%;
+        padding: 0;
+        @media (max-width: 768px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    img {
+        width: 100%;
+        padding: 0 30px;
+        @media (max-width: 992px) {
+            padding: 10px;
+        }
+        @media(max-width: 768px) {
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
 }
 
 .text-container {
+    padding: 0 14px;
     .titulo-beyond {
         font-size: 35px;
         font-weight: 500;
@@ -26,11 +45,13 @@
         font-size: 18px;
         font-weight: 400;
     }
-    #btn-trabajos-beyond {
-        margin-top: 116px;
-    }
-    #btn-acerca-beyond {
+    #btn-trabajos-beyond, #btn-acerca-beyond {
         margin-top: 31px;
+        width: 226px;
+
+        @media (max-width: 768px) {
+            margin: 40px calc(50% - 113px);
+        }
     }
 }
 

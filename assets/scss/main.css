@@ -522,22 +522,48 @@
   margin: 63px auto 52px auto;
 }
 
+h3 {
+  position: relative;
+}
+
 h3::before {
   content: '';
   position: absolute;
+  left: 50%;
   height: 2px;
-  width: 212px;
-  margin: 19px 0 0 -250px;
+  width: 215px;
+  margin: 19px 0;
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
   background-color: #989898;
+}
+
+@media (max-width: 992px) {
+  h3::before {
+    -webkit-transform: translateX(-370px);
+            transform: translateX(-370px);
+    width: 188px;
+  }
 }
 
 h3::after {
   content: '';
   position: absolute;
+  right: 50%;
   height: 2px;
-  width: 212px;
-  margin: 19px 0 0 27px;
+  width: 215px;
+  margin: 19px 0;
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
   background-color: #989898;
+}
+
+@media (max-width: 992px) {
+  h3::after {
+    -webkit-transform: translateX(370px);
+            transform: translateX(370px);
+    width: 188px;
+  }
 }
 
 .card-container-ba {
@@ -710,10 +736,48 @@ h3::after {
   background-color: #EC933C;
 }
 
-#about-ale,
-#about-beyond {
-  height: 482px;
-  width: 573px;
+.beyond-info {
+  margin-bottom: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.beyond-info .beyond-info-inner {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .beyond-info .beyond-info-inner {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.beyond-info img {
+  width: 100%;
+  padding: 0 30px;
+}
+
+@media (max-width: 992px) {
+  .beyond-info img {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .beyond-info img {
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+.text-container {
+  padding: 0 14px;
 }
 
 .text-container .titulo-beyond {
@@ -727,12 +791,15 @@ h3::after {
   font-weight: 400;
 }
 
-.text-container #btn-trabajos-beyond {
-  margin-top: 116px;
+.text-container #btn-trabajos-beyond, .text-container #btn-acerca-beyond {
+  margin-top: 31px;
+  width: 226px;
 }
 
-.text-container #btn-acerca-beyond {
-  margin-top: 31px;
+@media (max-width: 768px) {
+  .text-container #btn-trabajos-beyond, .text-container #btn-acerca-beyond {
+    margin: 40px calc(50% - 113px);
+  }
 }
 
 @media (max-width: 768px) {

@@ -5,6 +5,7 @@ const findComponentByPath = (path) => routes.find(el => el.path.match(path)) || 
 const router = () =>{
     const component = findComponentByPath(parseLocation()) ? findComponentByPath(parseLocation()).component : ErrorComponent;
     document.getElementById('app').innerHTML = component.render() 
+    component.postRender()
 }
 window.addEventListener('load', router)
 window.addEventListener('hashchange', router)
