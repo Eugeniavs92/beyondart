@@ -15,7 +15,9 @@ body {
     font-family: $font;
     position: relative;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 2px;
+}
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

@@ -4,22 +4,18 @@ const IndexComponent = {
     render: ()=>{
         return `
         
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/images/testCarrousel.png" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/testCarrousel.png" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/images/testCarrousel.png" class="d-block w-100">
-            </div>
+    <div class="banner-index">
+        <div class="banner-index__text">
+            <p class="banner__title">
+                ¡Hola! Soy Ale
+            </p>
+            <p class="banner__text">
+                Tengo 22 años, nací en Perú, y emigré a Argentina en el año 2019. Soy mamá de un hermoso gatito llamado Jagger. Estudio Ilustración en la Universidad de Palermo, y Actuación en la Universidad Nacional de las Artes (Argentina). Soy creadora de Beyond Art: una marca, un emprendimiento, proyecto social y comunidad artística. 
+            </p>
+            <a href="#/beyondart" class="btn btn-frame3">VER MÁS</a>
+        </div>
+
+        <div class="banner-index__img">
         </div>
     </div>
 
@@ -94,7 +90,7 @@ const IndexComponent = {
 const BeyondArtComponent = {
     render: ()=>{
         return `
-        <h3 class="titulo ba">¿QUÉ ES BEYOND ART?</h3>
+        <h3 class="titulo ba titulo-beyond-art">¿QUÉ ES BEYOND ART?</h3>
         <div class="container">
             <div class="row beyond-info">
                 <div class="col-md-6 beyond-info-inner">
@@ -109,7 +105,7 @@ const BeyondArtComponent = {
                             Tengo 22 años, nací en Perú, y emigré a Argentina en el año 2019. Soy mamá de un hermoso gatito llamado Jagger. Estudio Ilustración en la Universidad de Palermo, y Actuación en la Universidad Nacional de las Artes (Argentina). Soy creadora de Beyond Art:
                             una marca, un emprendimiento, proyecto social y comunidad artística. <br/><br/> Mi pasión está en poder compartir mi arte con el mundo y visibilizarlo como una herramienta de transformación social y personal.
                         </div>
-                        <a class="btn btn-outline-warning btn-ba"  href="#/portfolio" id="btn-trabajos-beyond"> VER MIS TRABAJOS </a>
+                        <a class="btn btn-frame6"  href="#/portfolio" id="btn-trabajos-beyond"> VER MIS TRABAJOS </a>
                     </div>
                 </div>
             </div>
@@ -125,7 +121,7 @@ const BeyondArtComponent = {
                             Art es más que sólo su faceta artística, sino que también trabajo junto a mis compañeros en fomentar un proyecto social que consiste en llevar el arte más allá de todas las fronteras y enseñarlo como una herramienta de crecimiento
                             y transformación personal.
                         </div>
-                        <a href="#/proyecto-social" class="btn btn-outline-warning btn-ba" id="btn-acerca-beyond"> CONOCÉ EL PROYECTO </a>
+                        <a href="#/proyecto-social" class="btn btn-frame6" id="btn-acerca-beyond"> CONOCÉ EL PROYECTO </a>
                     </div>
                 </div>
                 <div class="col-md-6 beyond-info-inner">
@@ -293,7 +289,7 @@ const ProyectoSocialComponent = {
         <h3 class="titulo">GRUPOS DE EDAD</h3>
 
         <div class="row">
-            <div class="col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
                 <div class="card border-top-frame1">
                     <div class="card-body">
                         <div class="card-subtitle">INSCRIPCIONES ABIERTAS</div>
@@ -305,7 +301,7 @@ const ProyectoSocialComponent = {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-3 mb-5">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
                 <div class="card">
                     <div class="card-body border-top-frame2">
                         <div class="card-subtitle">INSCRIPCIONES ABIERTAS</div>
@@ -427,7 +423,7 @@ const ErrorComponent = {
 const routes = [
     {path: '/', component: IndexComponent},
     {path: '/beyondart', component: BeyondArtComponent},
-    {path: '/portfolio', component: PortfolioComponent},
+    {path: '/trabajos', component: PortfolioComponent},
     {path: '/escuela-digital', component: EscuelaDigitalComponent},
     {path: '/proyecto-social', component: ProyectoSocialComponent},
     {path: '/shop', component: ShopComponent}

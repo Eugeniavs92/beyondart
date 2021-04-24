@@ -5,6 +5,10 @@
 .titulo {
     text-align: center;
     margin: 63px auto 52px auto;
+
+    @media (max-width: 768px) {
+        margin: 40px auto;
+    }
 }
 h3 {
     position: relative;
@@ -17,7 +21,7 @@ h3::before {
     width: 215px;
     margin: 19px 0;
     transform: translateX(-400px);
-    background-color: #989898;
+    background-color: #B8B8B8;
 
     @media (max-width: 992px) {
         transform: translateX(-370px);
@@ -33,13 +37,81 @@ h3::after {
     width: 215px;
     margin: 19px 0;
     transform: translateX(400px);
-    background-color: #989898;
+    background-color: #B8B8B8;
     
     @media (max-width: 992px) {
         transform: translateX(370px);
         width: 188px;
     }
 }
+
+.banner-index {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .banner-index__text {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 100px;
+        background-color: #D0A6EF;
+        color: #FFFFFF;
+
+        .banner__title {
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 50px;
+        }
+        .banner__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+
+        a {
+            width: 178px;
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+
+            &:hover {
+                border-color: #A847F1;
+            }
+        }
+    }
+
+    .banner-index__img {
+        height: 100%;
+        width: 50%;
+        background-image: url(../images/beyond2.jfif);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    @media (max-width: 992px) {
+        
+        .banner-index__text {
+            width: 100%;
+        } 
+        .banner-index__img {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        height: auto;
+        .banner-index__text {
+            padding: 80px 50px;
+        } 
+    }
+}
+
+
+
 .card-container-ba {
     display: flex;
     flex-direction: row;
@@ -85,15 +157,22 @@ h3::after {
         }
     }
     .card-box {
-        margin-bottom: 40px;
+        margin: 10px;
+        
+        @media (max-width: 645px) {
+            width: calc(50% - 22px);
+            height: auto;
+        }
         .card-shop {
             position: relative;
             height: 275px;
             width: 275px;
             text-align: center;
             display: inline-block;
-            margin-left: 23px;
-            margin-bottom: 40px;
+            @media (max-width: 645px) {
+                width: 100%;
+                height: auto;
+            }
             .descripcion-container {        
                 position: absolute;
                 top: 0;
@@ -124,10 +203,10 @@ h3::after {
                 width: 100%;
                 margin: 0;
                 padding: 0;
-                margin-bottom: 12px;
             }
             .tipo-articulo {
                 margin-bottom: 7px;
+                margin-top: 5px;
                 font-size: 12px;
                 font-weight: 400;
                 text-transform: uppercase;

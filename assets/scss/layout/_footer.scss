@@ -1,45 +1,90 @@
 @import '../utilities/variables';
 .footer {
-    display: flex;
-    flex-flow: row wrap;
     color: #262525;
-    background-color: rgba(241, 179, 118, 1);
-    flex: 1 100%;
-    .footer-img {
-        img {
-            width: 197.12px;
-            height: 168px;
-            margin-left: 90px;
-            margin-top: 40px;
-        }
-    }
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-        ul li:first-child {
-            margin-top: 20px;
-        }
-        li {
-            margin-top: 12px;
-            text-decoration: none;
-        }
-    }
+    background-color: #F4CCA5;
+    margin-top: 50px;
     .footer-info {
+        padding: 0;
         display: flex;
-        flex-flow: row wrap;
-        flex: 1 50%;
-        justify-content: space-evenly;
-        padding-top: 46px;
-        .box a {
-            color: black;
+        justify-content: space-around;
+        list-style: none;
+        .footer-cat {
+            margin-top: 45px;
+            max-width: 200px;
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 23px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    width: 100%;
+                    margin-top: 0;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    padding: 5px 0;
+                    a {
+                        text-decoration: none;
+                        color: #262525;
+                    }
+                }
+
+                .redes {
+                    position: relative;
+                    margin-left: 36px;
+                    i {
+                        position: absolute;
+                        left: -36px;
+                        top: 2px;
+                        font-size: 26px;
+                    }
+                    .fa-instagram {
+                        color: #FFFFFF;
+                        background-color: #FF5894;
+                        font-size: 15px;
+                        padding: 6px 6.5px;
+                        border-radius: 50%;
+                    }
+                    .fa-facebook-f {
+                        color: #FFFFFF;
+                        background-color: #3B5998;
+                        font-size: 15px;
+                        padding: 5.8px 8.5px;
+                        border-radius: 50%;
+                    }
+                    .fa-blogger-b {
+                        color: #FFFFFF;
+                        background-color: #F4B459;
+                        font-size: 15px;
+                        padding: 6px 6.5px;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 0 0 15%;
+        }
+        @media (max-width: 552px) {
+            padding: 0 0 0 5%;
+        }
+
     }
     .footer-bottom {
-        margin-top: 45px;
+        margin-top: 30px;
         width: 100%;
         padding: 17px;
+        font-size: 12px;
         text-align: center;
         text-decoration: none;
-        background-color: rgba(248, 161, 75, 1);
+        background-color: #FDB267;
     }
 }
