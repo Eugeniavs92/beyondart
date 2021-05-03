@@ -1,6 +1,11 @@
+.card {
+    border-radius: unset;
+    border: none;
+}
+
+
 .border-top-frame1 {
     border-top: 7px solid #A9F6FE;
-    box-shadow: 0px 0px 4px 4px rgba(169, 246, 254, 0.4);
 }
 .border-top-frame2 {
     border-top: 7px solid #D8FF8C;
@@ -26,7 +31,7 @@
     &:hover {
         background-color: #32D5E5;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(50, 213, 229, 0.7);
+        
     }
     &:focus {
         outline: none;
@@ -43,7 +48,7 @@
     &:hover {
         background-color: #B0EE38;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(176, 238, 56, 0.7);
+       
     }
     &:focus {
         outline: none;
@@ -60,7 +65,7 @@
     &:hover {
         background-color: #A847F1;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(168, 71, 241, 0.7);
+       
     }
     &:focus {
         outline: none;
@@ -77,7 +82,6 @@
     &:hover {
         background-color: #EBB124;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(235, 177, 36, 0.7);
     }
     &:focus {
         outline: none;
@@ -94,7 +98,7 @@
     &:hover {
         background-color: #FA54FF;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(250, 84, 255, 0.7);
+        
     }
     &:focus {
         outline: none;
@@ -111,7 +115,7 @@
     &:hover {
         background-color: #EC933C;
         color: #FFFFFF;
-        box-shadow: 0px 0px 5px 3px rgba(236, 147, 60, 0.7);
+        
     }
     &:focus {
         outline: none;
@@ -156,3 +160,7 @@
 }
 
 
+.lideres {
+    border: none!important;
+    box-shadow: unset!important;
+}

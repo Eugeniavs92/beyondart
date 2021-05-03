@@ -29,7 +29,9 @@
     padding: 10px 0;
     z-index: 2;
     box-shadow: 0 0 29px 0 rgba(134, 134, 134, 25%);
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding-left: 222px;
     @media (max-width: 991px) {
         justify-content: flex-end;

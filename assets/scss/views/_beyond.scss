@@ -77,3 +77,48 @@
         opacity: 0;
     }
 }
+
+.banner-index {
+    .img-beyondart1 {
+        background-image: url(../images/imagen-beyond-art-1.png);
+    }
+    .img-beyondart2 {
+        margin-top: -1px;
+        background-image: url(../images/imagen-beyond-art-2.png);
+    }
+
+    .banner-beyond__1 {
+        background-color: #76DFEA;
+
+        .boton {
+            &:hover {
+                color: #76DFEA;
+            }
+        }
+    }
+    .banner-beyond__2 {
+        background-color: #D0A6EF;
+
+        .boton {
+            &:hover {
+                color: #D0A6EF;
+            }
+        }
+
+        @media (max-width: 1125px) {
+            padding: 0 50px;
+        }
+        @media (max-width: 992px) {
+            padding: 0 100px;
+        }
+    }
+}
+
+.beyond-middel-img {
+    width: 100%;
+    display: none;
+    margin-top: -1px;
+    @media (max-width: 992px) {
+        display: block;
+    }
+}

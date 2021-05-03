@@ -40,7 +40,8 @@
             margin-bottom: 19px !important;
         }
         .btn-talleres-container {
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
     }
 }
@@ -55,13 +56,57 @@
     min-height: 380px;
     margin-bottom: 40px;
 }
-.btn-membresia {
-    border-color: #EC933C;
-    margin-top: 32px;
-    color: #EC933C;
+
+
+.banner-index {
+    .banner-escuela__text {
+        background-color: #C2F65B;
+
+        .boton {
+            &:hover {
+                color: #C2F65B;
+            }
+        }
+    }
+    .img-escueladigital {
+        background-image: url(../images/imagen-escuela-digital.png);
+    }
+
+    @media (max-width: 1200px) {
+        .banner-escuela__text {
+            width: 60%;
+        }
+        .img-escueladigital {
+            width: 40%;
+        }
+    }
+    @media (max-width: 992px) {
+        .banner-escuela__text {
+            width: 100%;
+        }
+        .img-escueladigital {
+            display: none;
+        }
+    }
 }
 
-.btn-membresia:hover {
-    color: white;
-    background-color: #EC933C;
+.boton-escuela {
+    font-family: $font;
+    text-decoration: none;
+    width: 137px;
+    height: 30px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover {
+        background-color: #FFFFFF;
+        color: #D0A6EF;
+        box-shadow: unset;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }

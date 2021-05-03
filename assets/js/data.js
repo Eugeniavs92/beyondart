@@ -131,7 +131,7 @@ const talleres = [
     },
     {
         nombre: 'pack 3 talleres',
-        img: './assets/images/testCarrousel.png',
+        img: './assets/images/talleres/imagen-pack-3-clases.png',
         desc: 'Brindamos la posibilidad de adquirir tres talleres a elección, es decir, tres meses de clases semanales.',
         innerDesc: 'Brindamos la posibilidad de adquirir tres talleres a elección, es decir, tres meses de clases semanales.',
         profesor: '',
@@ -143,7 +143,7 @@ const talleres = [
     },
     {
         nombre: 'sólo 1 clase',
-        img: './assets/images/testCarrousel.png',
+        img: './assets/images/talleres/imagen-1-sola-clase.png',
         desc: 'Se brinda la posibilidad de adquirir una sola clase de cualquier taller a elección.',
         innerDesc: 'Se brinda la posibilidad de adquirir una sola clase de cualquier taller a elección.',
         profesor: '',

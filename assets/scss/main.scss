@@ -1,12 +1,11 @@
-@import 'utilities/frames';
 @import 'layout/footer';
 @import 'layout/navbar';
 @import 'views/home';
 @import 'views/beyond';
 @import 'views/escuela-digital';
 @import 'views/proyecto-social';
-@import 'views/contacto';
 @import 'views/shop';
+@import 'utilities/frames';
 html,
 body {
     height: 100%;
@@ -14,7 +13,12 @@ body {
     padding: 0;
     font-family: $font;
     position: relative;
+    scroll-behavior: smooth;
 }
+.padding-inicial {
+    padding-top: 77px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }

@@ -2,15 +2,20 @@
 .footer {
     color: #262525;
     background-color: #F4CCA5;
-    margin-top: 50px;
     .footer-info {
         padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         list-style: none;
+        max-width: 800px;
+        margin: 0 auto;
         .footer-cat {
             margin-top: 45px;
             max-width: 200px;
+
+            @media(max-width: 552px) {
+                max-width: 160px;
+            }
             p {
                 font-size: 16px;
                 font-weight: 600;
@@ -38,6 +43,9 @@
                 .redes {
                     position: relative;
                     margin-left: 36px;
+                    @media(max-width: 552px) {
+                        max-width: 80px;
+                    }
                     i {
                         position: absolute;
                         left: -36px;
@@ -55,7 +63,7 @@
                         color: #FFFFFF;
                         background-color: #3B5998;
                         font-size: 15px;
-                        padding: 5.8px 8.5px;
+                        padding: 6px 7.5px;
                         border-radius: 50%;
                     }
                     .fa-blogger-b {
@@ -68,10 +76,11 @@
                 }
             }
         }
-        @media (max-width: 768px) {
+        @media (max-width: 890px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding: 0 0 0 15%;
+            max-width: 500px;
+            padding: 0 0 0 5%;
         }
         @media (max-width: 552px) {
             padding: 0 0 0 5%;

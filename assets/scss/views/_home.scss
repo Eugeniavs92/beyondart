@@ -5,6 +5,9 @@
 .titulo {
     text-align: center;
     margin: 63px auto 52px auto;
+    font-weight: 700;
+    color: #000000;
+    font-size: 25px;
 
     @media (max-width: 768px) {
         margin: 40px auto;
@@ -74,13 +77,24 @@ h3::after {
             margin-bottom: 40px;
         }
 
-        a {
+        .boton {
+            font-family: $font;
+            text-decoration: none;
             width: 178px;
+            height: 43px;
             color: #FFFFFF;
-            border-color: #FFFFFF;
-
+            border: 1.5px solid #FFFFFF;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
             &:hover {
-                border-color: #A847F1;
+                background-color: #FFFFFF;
+                color: #D0A6EF;
+                box-shadow: unset;
+                text-decoration: none;
+                cursor: pointer;
             }
         }
     }
