@@ -164,3 +164,30 @@
     border: none!important;
     box-shadow: unset!important;
 }
+
+.wapp-icon {
+    position: fixed;
+    z-index: 3;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0.9;
+    visibility: visible;
+    transition-property: visibility, opacity;
+    transition-duration: 1s;
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.wapp-hidden {
+    opacity: 0;
+    visibility: hidden;
+}

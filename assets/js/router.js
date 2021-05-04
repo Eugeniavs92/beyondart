@@ -5,6 +5,7 @@ const findComponentByPath = (path) => routes.find(el => el.path.match(path)) || 
 const router = () =>{
     const component = findComponentByPath(parseLocation()) ? findComponentByPath(parseLocation()).component : ErrorComponent;
     document.getElementById('app').innerHTML = component.render() 
+    window.scroll({top: 0, left: 0, behavior: 'auto'})
     component.postRender()
 }
 window.addEventListener('load', router)

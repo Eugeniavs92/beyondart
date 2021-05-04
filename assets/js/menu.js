@@ -20,3 +20,67 @@ for (let link of links) {
         menuMobile.classList.remove('navbar-active')
     })
 }
+
+// footer links
+
+const footFechas = document.getElementById('footProximasFechas')
+const footAuspiciador = document.getElementById('footAuspiciador')
+const footProyectoSocial = document.getElementById('footProyectoSocial')
+
+footAuspiciador.addEventListener('click', ()=>{
+    if(parseLocation() == "/proyecto-social") {
+        document.getElementById('titulo-colaborar').scrollIntoView()
+    } else {
+        footProyectoSocial.click()
+        setTimeout( ()=>{
+            const offSet = document.getElementById('titulo-colaborar').getBoundingClientRect().top - 100
+            window.scroll({top: offSet, behavior: 'smooth'})
+        },100)
+    }
+})
+
+footFechas.addEventListener('click', ()=>{
+    if(parseLocation() == "/proyecto-social") {
+        document.getElementById('titulo-fechas').scrollIntoView()
+    } else {
+        setTimeout( ()=>{
+            const offSet = document.getElementById('titulo-fechas').getBoundingClientRect().top - 100
+            window.scroll({top: offSet, behavior: 'smooth'})
+        },100)
+    }
+})
+
+const footTalleres = document.getElementById('footTalleres')
+const footLideres = document.getElementById('footLideres')
+const footMembresia = document.getElementById('footMembresia')
+
+footTalleres.addEventListener('click', ()=>{
+    if(parseLocation() == "/escuela-digital") {
+        document.getElementById('talleres-titulo').scrollIntoView()
+    } else {
+        setTimeout( ()=>{
+            const offSet = document.getElementById('talleres-titulo').getBoundingClientRect().top - 100
+            window.scroll({top: offSet, behavior: 'smooth'})
+        },100)
+    }
+})
+footLideres.addEventListener('click', ()=>{
+    if(parseLocation() == "/escuela-digital") {
+        document.getElementById('talleres-lideres').scrollIntoView()
+    } else {
+        setTimeout( ()=>{
+            const offSet = document.getElementById('talleres-lideres').getBoundingClientRect().top - 100
+            window.scroll({top: offSet, behavior: 'smooth'})
+        },100)
+    }
+})
+footMembresia.addEventListener('click', ()=>{
+    if(parseLocation() == "/escuela-digital") {
+        document.getElementById('talleres-titulo').scrollIntoView()
+    } else {
+        setTimeout( ()=>{
+            const offSet = document.getElementById('talleres-titulo').getBoundingClientRect().top - 100
+            window.scroll({top: offSet, behavior: 'smooth'})
+        },100)
+    }
+})

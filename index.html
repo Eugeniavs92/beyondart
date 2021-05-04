@@ -19,9 +19,9 @@
     <link rel="shortcut icon" href="./logoba.ico" type="image/x-icon">
     <!-- JS  -->
     <script defer src="./assets/js/data.js"></script>
-    <script defer src="./assets/js/menu.js"></script>
     <script defer src="./assets/js/components.js"></script>
     <script defer src="./assets/js/router.js"></script>
+    <script defer src="./assets/js/menu.js"></script>
 </head>
 
 <body class="animated fadeIn">
@@ -58,6 +58,9 @@
 
     <div id="app"></div>
 
+    <a class="wapp-icon wapp-hidden" id="wapp-icon" href="https://api.whatsapp.com/send?phone=5492914260663&text=" target="_blank">
+        <img src="assets/images/logoWsp.png">
+    </a>
 
     <footer class="footer">
         <ul class="footer-info">
@@ -65,24 +68,24 @@
                 <p>BEYOND ART</p>
                 <ul>
                     <li><a href="#/beyondart">Acerca de</a></li>
-                    <li><a href="#/portfolio">Trabajos</a></li>
+                    <li><a href="#/trabajos">Trabajos</a></li>
                     <li><a href="#/shop">Shop</a></li>
                 </ul>
             </li>
             <li class="footer-cat">
                 <p>PROYECTO SOCIAL</p>
                 <ul>
-                    <li><a href="#/proyecto-social">Acerca del proyecto</a></li>
-                    <li><a href="#/proyecto-social">Próximas fechas</a></li>
-                    <li><a href="#/proyecto-social">Ser auspiciador</a></li>
+                    <li><a id="footProyectoSocial" href="#/proyecto-social">Acerca del proyecto</a></li>
+                    <li><a id="footProximasFechas" href="#/proyecto-social">Próximas fechas</a></li>
+                    <li><a id="footAuspiciador" href="#/proyecto-social">Ser auspiciador</a></li>
                 </ul>
             </li>
             <li class="footer-cat">
                 <p>ESCUELA DIGITAL</p>
                 <ul>
-                    <li><a href="#/escuela-digital">Nuestros talleres</a></li>
-                    <li><a href="#/escuela-digital">Líderes</a></li>
-                    <li><a href="#/escuela-digital">Membresía</a></li>
+                    <li><a id="footTalleres" href="#/escuela-digital">Nuestros talleres</a></li>
+                    <li><a id="footLideres" href="#/escuela-digital">Líderes</a></li>
+                    <li><a id="footMembresia" href="#/escuela-digital">Membresía</a></li>
                 </ul>
             </li>
             <li class="footer-cat">
@@ -90,7 +93,7 @@
                 <ul>
                     <li class="redes"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/beyondartbyale/" target="_blank">Instagram</a></li>
                     <li class="redes"><i class="fab fa-facebook-f"></i><a href="">Facebook</a></li>
-                    <li class="redes"><i class="fab fa-blogger-b"></i><a href="">Blog</a></li>
+                    <li class="redes"><i class="fab fa-blogger-b"></i><a href="https://fideoswithmantequilla.blogspot.com/">Blog</a></li>
                 </ul>
             </li>
         </ul>

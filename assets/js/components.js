@@ -1,4 +1,6 @@
 // componentes
+const wappIcon = document.getElementById('wapp-icon')
+const wappMessage = '¡Hola! Quisiera tener más información acerca de los talleres de Beyond Art :)'
 
 const IndexComponent = {
     render: ()=>{
@@ -85,6 +87,8 @@ const IndexComponent = {
             frameCount++
             (frameCount > 19) && (frameCount = 12)
         }
+
+        wappIcon.classList.add('wapp-hidden')
     }
 }
 const BeyondArtComponent = {
@@ -130,7 +134,7 @@ const BeyondArtComponent = {
         `
     },
     postRender: ()=>{
-
+        wappIcon.classList.add('wapp-hidden')
     }
 }
 const PortfolioComponent = {
@@ -168,6 +172,8 @@ const PortfolioComponent = {
             frameCount++
             (frameCount > 19) && (frameCount = 12)
         })
+
+        wappIcon.classList.remove('wapp-hidden')
     }
 }
 const EscuelaDigitalComponent = {
@@ -198,15 +204,16 @@ const EscuelaDigitalComponent = {
                 </div>
             </div>
 
-            <h3 class="titulo">NUESTROS TALLERES</h3>
+            <h3 id="talleres-titulo" class="titulo">NUESTROS TALLERES</h3>
             <div id="talleres-container"></div>
 
 
-            <h3 class="titulo">LÍDERES</h3>
+            <h3 id="talleres-lideres" class="titulo">LÍDERES</h3>
             <div id="lideres-container" class="card-container-ba lideres"></div>
         </div>`
     },
     postRender: ()=>{
+       
 
         const talleresContainer = document.getElementById('talleres-container')
 
@@ -221,7 +228,7 @@ const EscuelaDigitalComponent = {
                             <div class="card-subtitle">${taller.profesor ? 'Por ' + taller.profesor : taller.alt}</div>
                             <p class="card-text">${taller.desc}</p>
                             <div class="btn-talleres-container">
-                                <a href="#" class="boton-escuela btn-${taller.framecolor}">QUIERO SABER MÁS</a>
+                                <a href="https://api.whatsapp.com/send?phone=5492914260663&text=${encodeURI(wappMessage)}" target="_blank" class="boton-escuela btn-${taller.framecolor}">QUIERO SABER MÁS</a>
                             </div>
                         </div>
                     </div>
@@ -249,8 +256,12 @@ const EscuelaDigitalComponent = {
 
         const botonVerTalleres = document.getElementById('boton-ver-talleres')
         botonVerTalleres.addEventListener('click', ()=>{
-            talleresContainer.scrollIntoView()
+            const tituloTalleres = document.getElementById('talleres-titulo')
+            const offSet = tituloTalleres.getBoundingClientRect().top - 90
+            window.scroll({top: offSet, behavior: 'smooth'})
         })
+
+        wappIcon.classList.add('wapp-hidden')
     }
 }
 const ProyectoSocialComponent = {
@@ -273,7 +284,7 @@ const ProyectoSocialComponent = {
         <div class="container-md mt-5 mb-5">
             
 
-            <h3 class="titulo">GRUPOS DE EDAD</h3>
+            <h3 id="titulo-fechas" class="titulo">GRUPOS DE EDAD</h3>
 
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5">
@@ -283,7 +294,7 @@ const ProyectoSocialComponent = {
                             <div class="card-title">Grupo 8 a 12 años</div>
                             <p class="card-text">Grupo orientado a niñxs de 8 a 12 años. Trabajeremos en distintos talleres artísticos mediante encuentros semanales en la plataforma zoom.</p>
                             <div class="btn-talleres-container">
-                                <a href="#" class="boton-proyecto btn-frame1" id="btn-taller">QUIERO INSCRIBIRME</a>
+                                <a href="https://api.whatsapp.com/send?phone=5492914260663&text=${encodeURI(wappMessage)}" target="_blank" class="boton-proyecto btn-frame1" id="btn-taller">QUIERO INSCRIBIRME</a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +306,7 @@ const ProyectoSocialComponent = {
                             <div class="card-title">Grupo 13 a 17 años</div>
                             <p class="card-text">Grupo orientado a adolescentes de 13 a 17 años. Trabajeremos en distintos talleres artísticos mediante encuentros semanales en la plataforma zoom.</p>
                             <div class="btn-talleres-container">
-                                <a href="#" class="boton-proyecto btn-frame2" id="btn-taller">QUIERO INSCRIBIRME</a>
+                                <a href="https://api.whatsapp.com/send?phone=5492914260663&text=${encodeURI(wappMessage)}" target="_blank" class="boton-proyecto btn-frame2" id="btn-taller">QUIERO INSCRIBIRME</a>
                             </div>
                         </div>
                     </div>
@@ -308,7 +319,7 @@ const ProyectoSocialComponent = {
                 <!-- cards desde data.js  -->
             </div>
 
-            <h3 class="titulo">¿QUERÉS COLABORAR?</h3>
+            <h3 id="titulo-colaborar" class="titulo">¿QUERÉS COLABORAR?</h3>
 
             <div class="texto-container mb-5">
                 <div class="subtitulo">
@@ -318,8 +329,8 @@ const ProyectoSocialComponent = {
                     Este proyecto no sería posible si no fuese por las personas que ayudan mediante distintas colaboraciones. Éstas son muy importantes para lograr la sostenibilidad del proyecto y hacen posible nuestro crecimiento. Las donaciones nos permiten estimular especialmente el área de proyecto social, ya que hacemos recaudaciones para poder regalarle en fechas importantes días lindos a niños en zonas vulnerables .
                 </div>
                 <div class="contenedor-membresia text-center">
-                    <a class="btn-membresia text-center">QUIERO SER AUSPICIADOR</a>
-                    <a class="btn-membresia text-center">QUIERO DONAR</a>
+                    <a href="https://api.whatsapp.com/send?phone=5492914260663&text=${encodeURI('¡Hola! Quisiera tener más información sobre cómo ser auspiciador de Beyond Art :)')}" target="_blank" class="btn-membresia text-center">QUIERO SER AUSPICIADOR</a>
+                    <a href="https://api.whatsapp.com/send?phone=5492914260663&text=${encodeURI('¡Hola! Quisiera tener más información sobre cómo donar para Beyond Art :)')}" target="_blank" class="btn-membresia text-center">QUIERO DONAR</a>
                 </div>
             </div>
 
@@ -342,13 +353,15 @@ const ProyectoSocialComponent = {
                     </div>
             `
         })
+
+        wappIcon.classList.add('wapp-hidden')
     }
 }
 const ShopComponent = {
     render: ()=>{
         return `
             <h3 class="titulo padding-inicial">SHOP BEYOND ART</h3>
-            <div id="shop-container" class="card-container-ba mb-5"></div>
+            <div id="shop-container" class="card-container-ba container-md mb-5"></div>
         `
     },
     postRender: ()=>{
@@ -380,6 +393,8 @@ const ShopComponent = {
             frameCount++
             (frameCount > 19) && (frameCount = 12)
         })
+
+        wappIcon.classList.remove('wapp-hidden')
     }
 }
 
