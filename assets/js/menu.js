@@ -84,3 +84,11 @@ footMembresia.addEventListener('click', ()=>{
         },100)
     }
 })
+
+const wappTextoCerrar = document.getElementById('wapp-texto-cerrar')
+const wappTexto = document.getElementsByClassName('wapp-texto')[0]
+wappTextoCerrar.addEventListener('click',()=>{
+    wappTextoCerrar.classList.remove('wapp-texto-cerrar-active')
+    wappTexto.classList.remove('wapp-texto-active')
+    
+})

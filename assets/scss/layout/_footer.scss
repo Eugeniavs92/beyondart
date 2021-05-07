@@ -1,7 +1,11 @@
 @import '../utilities/variables';
 .footer {
     color: #262525;
-    background-color: #F4CCA5;
+    background-color: #DABDEF;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
     .footer-info {
         padding: 0;
         display: flex;
@@ -13,9 +17,7 @@
             margin-top: 45px;
             max-width: 200px;
 
-            @media(max-width: 552px) {
-                max-width: 160px;
-            }
+            
             p {
                 font-size: 16px;
                 font-weight: 600;
@@ -43,9 +45,6 @@
                 .redes {
                     position: relative;
                     margin-left: 36px;
-                    @media(max-width: 552px) {
-                        max-width: 80px;
-                    }
                     i {
                         position: absolute;
                         left: -36px;
@@ -76,15 +75,6 @@
                 }
             }
         }
-        @media (max-width: 890px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            max-width: 500px;
-            padding: 0 0 0 5%;
-        }
-        @media (max-width: 552px) {
-            padding: 0 0 0 5%;
-        }
 
     }
     .footer-bottom {
@@ -94,6 +84,6 @@
         font-size: 12px;
         text-align: center;
         text-decoration: none;
-        background-color: #FDB267;
+        background-color: #C88EF2;
     }
 }

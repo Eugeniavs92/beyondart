@@ -168,23 +168,87 @@
 .wapp-icon {
     position: fixed;
     z-index: 3;
-    bottom: 40px;
-    right: 40px;
+    bottom: 45px;
+    right: 33px;
     opacity: 0.9;
     visibility: visible;
     transition-property: visibility, opacity;
     transition-duration: 1s;
 
-    img {
-        height: 40px;
-        width: 40px;
+    @media(max-width:552px) {
+        bottom: 10px;
+        right: 10px;
     }
 
-    &:hover {
-        transform: scale(1.1);
-        opacity: 1;
-        cursor: pointer;
+    img {
+        height: 60px;
+        width: 60px;
+
+        &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+            cursor: pointer;
+        }
     }
+
+    .wapp-texto {
+        position: absolute;
+        width: 337px;
+        height: 51px;
+        border-radius: 10px;
+        background-color: #FFFFFF;
+        box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.251);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -55px;
+        right: 10px;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1s ease-in 3s;
+
+        p {
+            text-decoration: none;
+            color: black;
+            font-family: $font;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+    .wapp-texto-cerrar {
+        position: absolute;
+        right: 10px;
+        top: -82px;
+        border: none;
+        border-radius: 50%;
+        height: 21px;
+        width: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D7D7D7;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s ease-in 3s;
+
+        .fa-times {
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .wapp-texto-active {
+        opacity: 1;
+        visibility: visible;
+    }
+    .wapp-texto-cerrar-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
 }
 
 .wapp-hidden {

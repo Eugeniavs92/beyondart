@@ -12,10 +12,10 @@
     <!-- FontAwesome 4.7.0 -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- CSS -->
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/scss/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="shortcut icon" href="./logoba.ico" type="image/x-icon">
     <!-- JS  -->
     <script defer src="./assets/js/data.js"></script>
@@ -58,9 +58,15 @@
 
     <div id="app"></div>
 
-    <a class="wapp-icon wapp-hidden" id="wapp-icon" href="https://api.whatsapp.com/send?phone=5492914260663&text=" target="_blank">
-        <img src="assets/images/logoWsp.png">
-    </a>
+    <div id="wapp-icon" class="wapp-icon wapp-hidden">
+        <a id="link-wapp" href="https://api.whatsapp.com/send?phone=5491128666087&text=" target="_blank">
+            <img src="assets/images/logoWsp.png">
+        </a>
+        <div class="wapp-texto">
+            <p>¿Estás interesadx en adquirir alguna de estas obras?</p>
+        </div>
+        <button id="wapp-texto-cerrar" class="wapp-texto-cerrar"><i class="fas fa-times"></i></button>
+    </div>
 
     <footer class="footer">
         <ul class="footer-info">
@@ -92,8 +98,8 @@
                 <p>SÍGUEME</p>
                 <ul>
                     <li class="redes"><i class="fab fa-instagram"></i><a href="https://www.instagram.com/beyondartbyale/" target="_blank">Instagram</a></li>
-                    <li class="redes"><i class="fab fa-facebook-f"></i><a href="">Facebook</a></li>
-                    <li class="redes"><i class="fab fa-blogger-b"></i><a href="https://fideoswithmantequilla.blogspot.com/">Blog</a></li>
+                    <li class="redes"><i class="fab fa-facebook-f"></i><a href="https://www.facebook.com/beyondartts" target="_blank">Facebook</a></li>
+                    <li class="redes"><i class="fab fa-blogger-b"></i><a href="https://fideoswithmantequilla.blogspot.com/" target="_blank">Blog</a></li>
                 </ul>
             </li>
         </ul>
